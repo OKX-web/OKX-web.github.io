@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "OKX | Login | Home Official Site",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/okx-favicon.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://OKX-web.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://OKX-web.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "mzfkwmv5dz",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "OKX | Login | Home Official Site",
+        "meta_descr": "Buy BTC, ETH, XRP and more on OKX, a leading crypto exchange – explore Web3, invest in DeFi and NFTs. Register now and experience the future of finance.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.okx.com/\"><img src=\"@PROJECT_PATH@/assets/images/okx.png\" alt=\"OKX-web\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "unZEBzhC19",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX | Login | Home Official Site</a></b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX: A Comprehensive Overview of One of the Leading Cryptocurrency Exchanges</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://www.okx.com/\" class=\"text-primary\">In the rapidly evolving world of cryptocurrency exchanges, OKX has carved out a significant niche for itself. Launched in 2014 and originally known as OKCoin, this platform has grown into one of the top players in the crypto space. This article delves into the various facets of OKX, exploring its history, features, trading options, security measures, and its role in the broader cryptocurrency ecosystem.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">1. Historical Background and Evolution</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX, headquartered in Malta, emerged from its predecessor, OKCoin, which was one of the early pioneers in the cryptocurrency exchange industry. Initially focused on spot trading, OKCoin quickly established a reputation for reliability and innovation. By rebranding as OKX, the platform aimed to diversify its offerings and cater to a broader audience interested in both trading and investing in digital assets.</a><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">Over the years, OKX has expanded its services to include futures trading, perpetual swaps, options, and decentralized finance (DeFi) products. This evolution reflects the broader trend of cryptocurrency exchanges diversifying their offerings to meet the growing demand for sophisticated trading tools and financial products.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">2. Core Features and Trading Options</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">One of OKX’s standout features is its comprehensive suite of trading options. The platform supports a wide range of cryptocurrencies, including major players like Bitcoin (BTC), Ethereum (ETH), and lesser-known altcoins. This extensive selection allows users to diversify their portfolios and explore various investment opportunities.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Spot Trading:</a></b><a href=\"https://www.okx.com/\" class=\"text-primary\"> The foundational trading service of OKX, spot trading allows users to buy and sell cryptocurrencies at current market prices. The platform offers a user-friendly interface with advanced charting tools, making it suitable for both beginners and experienced traders.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Futures Trading:</a></b><a href=\"https://www.okx.com/\" class=\"text-primary\"> OKX offers both traditional futures contracts and perpetual swaps, which are derivatives allowing users to speculate on the future price of cryptocurrencies without owning the underlying asset. These instruments are popular among traders looking to leverage their positions or hedge against market volatility.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Options Trading:</a></b><a href=\"https://www.okx.com/\" class=\"text-primary\"> For those seeking more sophisticated trading strategies, OKX provides options trading. This feature allows users to buy and sell options contracts, giving them the ability to hedge risk or speculate on price movements with a defined risk profile.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">DeFi Products: </a></b><a href=\"https://www.okx.com/\" class=\"text-primary\">In response to the rise of decentralized finance, OKX has integrated various DeFi services, including liquidity mining and staking. These features enable users to earn rewards by participating in the DeFi ecosystem, thereby adding another layer to their investment strategy.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">3. User Experience and Interface</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX has invested significantly in creating a robust and user-friendly platform. Its interface is designed to cater to both novice and professional traders, with features like real-time charts, technical indicators, and customizable layouts. The platform is accessible via web, desktop, and mobile applications, ensuring that users can trade and manage their assets conveniently from anywhere.</a><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">The exchange also offers a demo trading feature, which allows users to practice trading strategies in a simulated environment without risking real money. This is particularly useful for newcomers who want to familiarize themselves with the platform and trading concepts before committing actual funds.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">4. Security Measures</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">Security is a paramount concern for cryptocurrency exchanges, and OKX takes this aspect very seriously. The platform employs a multi-layered security approach to protect user assets and data. Key security features include:</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Cold Storage:</a></b><a href=\"https://www.okx.com/\" class=\"text-primary\"> The majority of user funds are stored in cold wallets, which are offline and less susceptible to hacking attempts. This practice significantly reduces the risk of theft compared to exchanges that keep most of their funds online.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Two-Factor Authentication (2FA): </a></b><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX requires users to enable 2FA to add an extra layer of security to their accounts. This feature ensures that even if login credentials are compromised, unauthorized access is prevented.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Regular Security Audits:</a></b><a href=\"https://www.okx.com/\" class=\"text-primary\"> The platform undergoes regular security audits and vulnerability assessments to identify and address potential weaknesses. These proactive measures help maintain a secure trading environment.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">Insurance Fund: </a></b><a href=\"https://www.okx.com/\" class=\"text-primary\">OKX maintains an insurance fund to cover potential losses resulting from unforeseen security breaches or technical issues. This fund provides an additional layer of protection for users’ assets.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">5. Customer Support and Resources</a><br><br></b><a href=\"https://www.okx.com/\" class=\"text-primary\">Effective customer support is crucial for maintaining user trust and satisfaction. OKX offers a range of support channels, including live chat, email, and a comprehensive help center. The help center features an extensive knowledge base with articles, FAQs, and tutorials covering various aspects of trading and account management.</a><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">In addition to direct support, OKX provides educational resources aimed at enhancing users’ understanding of cryptocurrency trading and investment. These resources include market analysis, trading guides, and webinars.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">6. Regulatory Compliance and Global Reach</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">As cryptocurrency regulations vary significantly across jurisdictions, OKX has made efforts to comply with local regulations in the markets it operates in. This includes implementing Know Your Customer (KYC) procedures and anti-money laundering (AML) measures to ensure compliance with regulatory standards.</a><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">The platform has a global presence, serving users from various regions. Its ability to adapt to different regulatory environments while maintaining a high level of service has contributed to its success and widespread adoption.</a><br><br><b><a href=\"https://www.okx.com/\" class=\"text-primary\">7. The Future of OKX</a></b><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">Looking ahead, OKX is poised to continue its growth and innovation. The platform is likely to expand its offerings further, incorporating new financial products and technologies as the cryptocurrency landscape evolves. Additionally, as decentralized finance and blockchain technology gain traction, OKX’s involvement in these areas positions it well to capitalize on emerging trends.</a><br><br><a href=\"https://www.okx.com/\" class=\"text-primary\">In conclusion, OKX stands out as a leading cryptocurrency exchange with a diverse range of trading options, robust security measures, and a strong commitment to user experience. Its evolution from a spot trading platform to a comprehensive crypto marketplace reflects the dynamic nature of the cryptocurrency industry and the growing sophistication of investor needs. As the sector continues to mature, OKX’s ability to adapt and innovate will likely play a key role in its continued success and influence in the global crypto ecosystem.</a></p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "unZECq2Gxu",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
